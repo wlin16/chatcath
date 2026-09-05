@@ -41,10 +41,9 @@ const port = portIdx >= 0 ? Number(args[portIdx + 1]) : 3080;
 // "Restart DSH" in Settings → General (dshmarket) replaces the server with a detached
 // process, so our child exits. Follow the replacement: keep this command attached to
 // whatever listens on the port next, so Ctrl-C still stops the service.
-const listeningPid = () => {
+const listeningPids = () => {
   const r = spawnSync("lsof", ["-tiTCP:" + port, "-sTCP:LISTEN"], { encoding: "utf8" });
-  const pid = Number((r.stdout || "").trim().split("\n")[0]);
-  return Number.isInteger(pid) && pid > 0 ? pid : null;
+  return (r.stdout || "").split("\n").map(Number).filter((n) => Number.isInteger(n) && n > 0);
 };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let following = null;
@@ -58,13 +57,14 @@ const child = spawn(process.execPath, [bin, "--profile", PROFILE, ...args], {
 });
 child.on("exit", async (code, signal) => {
   const ownPid = child.pid;
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 30; i++) {
     await sleep(500);
-    const pid = listeningPid();
-    if (pid !== null && pid !== ownPid) {
+    const pid = listeningPids().find((p) => p !== ownPid);
+    if (pid !== undefined) {
       following = pid;
       console.log(`chatcath: dsh 已在后台重启(pid ${pid}),继续跟随;Ctrl-C 可停止`);
-      while (listeningPid() === pid) await sleep(2000);
+      let misses = 0;
+      while (misses < 3) { await sleep(2000); misses = listeningPids().includes(pid) ? 0 : misses + 1; }
       console.log("chatcath: dsh 已停止");
       process.exit(0);
     }

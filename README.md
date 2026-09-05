@@ -44,13 +44,20 @@ pinned under `dependencies` (see `chatcath.peerShims` in `package.json`). Bump t
 
 ## Update
 
+In the app: **Settings → General → Check for updates**. It runs `git fetch` and lists the new commits; **Update now**
+does `git pull --ff-only` + `pnpm install`, then restarts the service and reloads the page. The same pane has
+**Restart DSH**. Both rows follow the UI language (中文 / English).
+
+From the terminal, equivalently:
+
 ```sh
 git pull && pnpm install && pnpm dsh web
 ```
+
+Checkouts older than the updater plugin (before commit a705f66) need that one manual pull first.
+The updater refuses to run over uncommitted local changes; commit or stash them.
 
 ## Add / remove plugins
 
 Edit `dependencies` and `dsh.profile.bundles` in `package.json`, run `pnpm install`. The in-app plugin market also works
 (it runs pnpm in this directory); commit the resulting `package.json` / `pnpm-lock.yaml` if you want to share the change.
-
-_Self-update test marker._
