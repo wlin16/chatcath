@@ -52,3 +52,5 @@ git pull && pnpm install && pnpm dsh web
 
 Edit `dependencies` and `dsh.profile.bundles` in `package.json`, run `pnpm install`. The in-app plugin market also works
 (it runs pnpm in this directory); commit the resulting `package.json` / `pnpm-lock.yaml` if you want to share the change.
+
+_Self-update test marker._
