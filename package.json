@@ -1,8 +1,8 @@
 {
-  "name": "dsh-science",
+  "name": "chatcath",
   "version": "0.1.0",
   "private": true,
-  "description": "DSH Science — a DeepSeek Harness (dsh) profile for protein/biotech work: curated plugins + compatibility patches. Clone, pnpm install, pnpm dsh web.",
+  "description": "ChatCath — a DeepSeek Harness (dsh) profile for protein/biotech work: curated plugins + compatibility patches. Clone, pnpm install, pnpm dsh web.",
   "type": "module",
   "engines": {
     "node": ">=22"
@@ -80,7 +80,7 @@
       ]
     }
   },
-  "dshScience": {
+  "chatcath": {
     "peerShims": [
       "@deepseek-ai/cordis-plugin-group",
       "@deepseek-ai/dsh-anonymous-user-id",

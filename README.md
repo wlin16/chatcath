@@ -1,4 +1,4 @@
-# DSH Science
+# ChatCath
 
 A [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) profile for protein / biotech work:
 a curated plugin set plus the compatibility patches they need on dsh 0.1.2. Same install shape as upstream.
@@ -8,8 +8,8 @@ a curated plugin set plus the compatibility patches they need on dsh 0.1.2. Same
 Requirements: Node.js ≥ 22, pnpm ≥ 10 (`npm i -g pnpm`). macOS or Linux; Python 3 optional (two cosmetic patches skip without it).
 
 ```sh
-git clone https://github.com/wlin16/dsh-science.git
-cd dsh-science
+git clone https://github.com/wlin16/chatcath.git
+cd chatcath
 pnpm install
 pnpm dsh web
 ```
@@ -25,7 +25,9 @@ There is no build step: every plugin ships prebuilt from npm, and the two in-rep
   (market, better sidebar, codex-ui, task board, ssh-ops, skills manager, agency agents, archive manager, automation,
   IM connect, subscriptions, message edit, suggest-prompt, find-plugin …)
 - In-repo plugins: `plugins/dsh-protein-cards` (protein structure cards) and `plugins/dsh-artifact-viewer`.
-- `patches/` applied automatically on `pnpm install` (and on every `pnpm dsh`):
+- `patches/` applied automatically on `pnpm install`:
+  - patch 7 — Settings → General gets a "Restart DSH" row (中/英). Two clicks to confirm; the page reloads when the
+    new process is up. The server restarts as a detached process; `pnpm dsh web` follows it, so Ctrl-C still stops it.
   - patch 10 — `@studyzy/dsh-suggest-prompt` 1.0.1 targets dsh 0.1.1; rewires three moved APIs so dsh 0.1.2 boots.
   - patch 8 — ssh-ops session-header tab gets `role="tab"` (fixes the floating tab, shows in the English UI). Needs Python 3.
   - patch 9 — ssh-ops: import a chosen list of hosts from `~/.ssh/config`. Needs Python 3.
@@ -33,12 +35,12 @@ There is no build step: every plugin ships prebuilt from npm, and the two in-rep
 ## How it works
 
 dsh boots profiles only from `$DSH_HOME/profiles/<name>`, so `scripts/dsh.mjs` links
-`~/.dsh/profiles/science` → this checkout on first run, then execs `dsh --profile science …`.
+`~/.dsh/profiles/chatcath` → this checkout on first run, then execs `dsh --profile chatcath …`.
 Settings, credentials and sessions live in `~/.dsh` like a stock dsh install. Use `DSH_HOME=…` or
-`DSH_SCIENCE_PROFILE=<name>` to change either.
+`CHATCATH_PROFILE=<name>` to change either.
 
 The dsh core has peer dependencies a global `npm install` satisfies implicitly; pnpm does not, so they are
-pinned under `dependencies` (see `dshScience.peerShims` in `package.json`). Bump them together with `@deepseek-ai/dsh`.
+pinned under `dependencies` (see `chatcath.peerShims` in `package.json`). Bump them together with `@deepseek-ai/dsh`.
 
 ## Update
 
