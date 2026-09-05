@@ -3,7 +3,6 @@ import { existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
-import { applyPatch7 } from "../patches/patch7-restart-general.mjs";
 import { applyPatch10 } from "../patches/patch10-suggest-prompt.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -13,7 +12,6 @@ if (!existsSync(join(nm, "@deepseek-ai", "dsh"))) {
   process.exit(0);
 }
 console.log("chatcath: 打补丁");
-console.log(applyPatch7(nm));
 console.log(applyPatch10(nm));
 const py = ["python3", "python"].find((c) => spawnSync(c, ["--version"], { stdio: "ignore" }).status === 0);
 if (py === undefined) {

@@ -107,6 +107,9 @@ importers:
       '@studyzy/dsh-suggest-prompt':
         specifier: 1.0.1
         version: 1.0.1(@deepseek-ai/cordis@4.0.2)(@deepseek-ai/dsh-client-locale@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-client-ui-conversation@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-client-ui-settings-plugins@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-client-ui-settings@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-settings@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)(@deepseek-ai/dsh-brand@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/schemastery@3.18.2))(react@18.3.1)
+      chatcath-updater:
+        specifier: workspace:*
+        version: link:plugins/chatcath-updater
       dsh-artifact-viewer:
         specifier: workspace:*
         version: link:plugins/dsh-artifact-viewer
@@ -134,6 +137,8 @@ importers:
       scheduler:
         specifier: 0.27.0
         version: 0.27.0
+
+  plugins/chatcath-updater: {}
 
   plugins/dsh-artifact-viewer:
     dependencies:

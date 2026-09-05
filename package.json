@@ -46,6 +46,7 @@
     "@michengai/dsh-im-connect": "0.1.34",
     "@michengai/dsh-skills-manager": "0.1.38",
     "@studyzy/dsh-suggest-prompt": "1.0.1",
+    "chatcath-updater": "workspace:*",
     "dsh-artifact-viewer": "workspace:*",
     "dsh-better-sidebar": "0.18.0",
     "dsh-find-plugin": "0.3.7",
@@ -76,7 +77,8 @@
         "dsh-protein-cards",
         "dsh-artifact-viewer",
         "dsh-plugin-message-edit",
-        "@studyzy/dsh-suggest-prompt"
+        "@studyzy/dsh-suggest-prompt",
+        "chatcath-updater"
       ]
     }
   },
