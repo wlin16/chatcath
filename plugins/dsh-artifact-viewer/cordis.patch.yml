@@ -1,0 +1,3 @@
+- insert:
+    - id: artifact-viewer
+      name: 'dsh-artifact-viewer'

@@ -1,0 +1,48 @@
+{
+  "name": "dsh-artifact-viewer",
+  "version": "0.1.0",
+  "description": "Chat card grid and right-side previews for FASTA, CSV/TSV, DOCX, PPTX, and PDF artifacts in DSH Web.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "scripts",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "react": "^18.3.1"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.1",
+    "jszip": "^3.10.1"
+  }
+}

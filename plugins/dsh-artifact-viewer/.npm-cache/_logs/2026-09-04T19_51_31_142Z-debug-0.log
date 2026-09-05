@@ -1,0 +1,558 @@
+0 verbose cli /opt/homebrew/Cellar/node@22/22.22.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.0
+3 silly config load:file:/opt/homebrew/Cellar/node@22/22.22.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/acetyl/dsh_test/dsh-artifact-viewer/.npmrc
+5 silly config load:file:/Users/acetyl/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--ignore-scripts" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/acetyl/dsh_test/dsh-artifact-viewer/.npm-cache/_logs/2026-09-04T19_51_31_142Z-
+10 verbose logfile /Users/acetyl/dsh_test/dsh-artifact-viewer/.npm-cache/_logs/2026-09-04T19_51_31_142Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @deepseek-ai/dsh-tools@*
+15 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-tools cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-tools 82ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-tools set size:undefined disposed:false
+18 silly fetch manifest @deepseek-ai/cordis@^4.0.1-rc.1
+19 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/npm 104ms
+21 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fcordis 50ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis set size:undefined disposed:false
+23 silly fetch manifest @deepseek-ai/cordis-plugin-include@^1.0.7
+24 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-include cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-include 174ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-include set size:undefined disposed:false
+27 silly fetch manifest @deepseek-ai/cordis-plugin-loader@^1.0.3
+28 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-loader cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-loader 197ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcordis-plugin-loader set size:undefined disposed:false
+31 silly fetch manifest node-addon-require-builtin@^0.1.4
+32 silly packumentCache full:https://registry.npmjs.org/node-addon-require-builtin cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/node-addon-require-builtin 25ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/node-addon-require-builtin set size:undefined disposed:false
+35 silly fetch manifest @deepseek-ai/dsh-agent@^0.0.1-rc.1
+36 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-agent cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-agent 49ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-agent set size:undefined disposed:false
+39 silly fetch manifest @deepseek-ai/dsh-invariants@^0.0.1-rc.5
+40 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-invariants cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-invariants 43ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-invariants set size:undefined disposed:false
+43 silly fetch manifest @deepseek-ai/dsh-llm@^0.0.1-rc.5
+44 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-llm cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-llm 222ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-llm set size:undefined disposed:false
+47 silly fetch manifest @deepseek-ai/dsh-attachment@^0.0.1-rc.5
+48 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-attachment cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-attachment 36ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-attachment set size:undefined disposed:false
+51 silly fetch manifest @deepseek-ai/dsh-brand@^0.0.1-rc.5
+52 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-brand cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-brand 50ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-brand set size:undefined disposed:false
+55 silly fetch manifest @deepseek-ai/dsh-timeout@^0.0.1-rc.5
+56 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-timeout cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-timeout 37ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-timeout set size:undefined disposed:false
+59 silly fetch manifest @deepseek-ai/dsh-scope@^0.0.1-rc.5
+60 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-scope cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-scope 41ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-scope set size:undefined disposed:false
+63 silly fetch manifest @deepseek-ai/dsh-session@^0.0.1-rc.5
+64 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-session cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-session 192ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-session set size:undefined disposed:false
+67 silly fetch manifest @deepseek-ai/dsh-typert-protocol@^0.0.1-rc.5
+68 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-typert-protocol cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-typert-protocol 208ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-typert-protocol set size:undefined disposed:false
+71 silly fetch manifest @deepseek-ai/dsh-system-prompt@^0.0.1-rc.5
+72 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-system-prompt cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-system-prompt 38ms (cache miss)
+74 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-system-prompt set size:undefined disposed:false
+75 silly fetch manifest @deepseek-ai/dsh-code-runtime@^0.0.1-rc.1
+76 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-code-runtime cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-code-runtime 48ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-code-runtime set size:undefined disposed:false
+79 silly fetch manifest @deepseek-ai/dsh-user-approval@^0.0.1-rc.1
+80 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-user-approval cache-miss
+81 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fdsh-user-approval 48ms (cache miss)
+82 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fdsh-user-approval set size:undefined disposed:false
+83 silly fetch manifest esbuild@^0.24.2
+84 silly packumentCache full:https://registry.npmjs.org/esbuild cache-miss
+85 http fetch GET 200 https://registry.npmjs.org/esbuild 80ms (cache miss)
+86 silly packumentCache full:https://registry.npmjs.org/esbuild set size:undefined disposed:false
+87 silly fetch manifest react@^18.3.1
+88 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+89 http fetch GET 200 https://registry.npmjs.org/react 154ms (cache miss)
+90 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+91 silly placeDep ROOT @deepseek-ai/dsh-tools@0.0.1-rc.1 OK for: dsh-artifact-viewer@0.1.0 want: *
+92 silly placeDep ROOT @deepseek-ai/cordis@4.0.2 OK for: @deepseek-ai/dsh-tools@0.0.1-rc.1 want: ^4.0.1-rc.1
+93 silly placeDep ROOT @deepseek-ai/dsh-llm@0.0.1-rc.5 OK for: @deepseek-ai/dsh-tools@0.0.1-rc.1 want: ^0.0.1-rc.1
+94 silly placeDep ROOT @deepseek-ai/dsh-brand@0.0.1-rc.5 OK for: @deepseek-ai/dsh-llm@0.0.1-rc.5 want: ^0.0.1-rc.5
+95 silly placeDep ROOT @deepseek-ai/dsh-invariants@0.0.1-rc.5 OK for: @deepseek-ai/dsh-brand@0.0.1-rc.5 want: ^0.0.1-rc.5
+96 silly placeDep ROOT @deepseek-ai/dsh-timeout@0.0.1-rc.5 OK for: @deepseek-ai/dsh-llm@0.0.1-rc.5 want: ^0.0.1-rc.5
+97 silly placeDep ROOT @deepseek-ai/dsh-attachment@0.0.1-rc.5 OK for: @deepseek-ai/dsh-llm@0.0.1-rc.5 want: ^0.0.1-rc.5
+98 silly placeDep ROOT @deepseek-ai/dsh-agent@0.0.1-rc.5 OK for: @deepseek-ai/dsh-tools@0.0.1-rc.1 want: ^0.0.1-rc.1
+99 silly placeDep ROOT @deepseek-ai/dsh-scope@0.0.1-rc.5 OK for: @deepseek-ai/dsh-agent@0.0.1-rc.5 want: ^0.0.1-rc.5
+100 silly placeDep ROOT @deepseek-ai/dsh-session@0.0.1-rc.5 OK for: @deepseek-ai/dsh-agent@0.0.1-rc.5 want: ^0.0.1-rc.5
+101 silly placeDep ROOT @deepseek-ai/dsh-typert-protocol@0.0.1-rc.5 OK for: @deepseek-ai/dsh-session@0.0.1-rc.5 want: ^0.0.1-rc.5
+102 silly placeDep ROOT @deepseek-ai/dsh-system-prompt@0.0.1-rc.5 OK for: @deepseek-ai/dsh-agent@0.0.1-rc.5 want: ^0.0.1-rc.5
+103 silly placeDep ROOT @deepseek-ai/dsh-code-runtime@0.0.1-rc.1 OK for: @deepseek-ai/dsh-tools@0.0.1-rc.1 want: ^0.0.1-rc.1
+104 silly placeDep ROOT @deepseek-ai/dsh-user-approval@0.0.1-rc.1 OK for: @deepseek-ai/dsh-tools@0.0.1-rc.1 want: ^0.0.1-rc.1
+105 silly placeDep ROOT esbuild@0.24.2 OK for: dsh-artifact-viewer@0.1.0 want: ^0.24.2
+106 silly placeDep ROOT react@18.3.1 OK for: dsh-artifact-viewer@0.1.0 want: ^18.3.1
+107 silly fetch manifest @deepseek-ai/schemastery@^3.18.1-rc.1
+108 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery cache-miss
+109 silly fetch manifest @deepseek-ai/schemastery@^3.18.1-rc.1
+110 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery cache-miss
+111 silly fetch manifest @deepseek-ai/schemastery@^3.18.1-rc.4
+112 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery cache-miss
+113 silly fetch manifest @deepseek-ai/schemastery@^3.18.1-rc.4
+114 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery cache-miss
+115 silly fetch manifest @deepseek-ai/schemastery@^3.18.1-rc.4
+116 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery cache-miss
+117 silly fetch manifest @standard-schema/spec@^1.1.0
+118 silly packumentCache full:https://registry.npmjs.org/@standard-schema%2fspec cache-miss
+119 silly fetch manifest @deepseek-ai/cosmokit@^1.8.3
+120 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcosmokit cache-miss
+121 silly fetch manifest @esbuild/aix-ppc64@0.24.2
+122 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 cache-miss
+123 silly fetch manifest @esbuild/linux-arm@0.24.2
+124 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fcosmokit 49ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fcosmokit set size:undefined disposed:false
+127 silly fetch manifest @esbuild/linux-x64@0.24.2
+128 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 60ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm set size:undefined disposed:false
+131 silly fetch manifest @esbuild/sunos-x64@0.24.2
+132 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 cache-miss
+133 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 63ms (cache miss)
+134 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 set size:undefined disposed:false
+135 silly fetch manifest @esbuild/win32-x64@0.24.2
+136 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 cache-miss
+137 http fetch GET 200 https://registry.npmjs.org/@standard-schema%2fspec 64ms (cache miss)
+138 silly packumentCache full:https://registry.npmjs.org/@standard-schema%2fspec set size:undefined disposed:false
+139 silly fetch manifest @esbuild/darwin-x64@0.24.2
+140 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 37ms (cache miss)
+142 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 set size:undefined disposed:false
+143 silly fetch manifest @esbuild/linux-ia32@0.24.2
+144 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 cache-miss
+145 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 39ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 set size:undefined disposed:false
+147 silly fetch manifest @esbuild/netbsd-x64@0.24.2
+148 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 cache-miss
+149 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 45ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 set size:undefined disposed:false
+151 silly fetch manifest @esbuild/win32-ia32@0.24.2
+152 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 cache-miss
+153 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 50ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 set size:undefined disposed:false
+155 silly fetch manifest @esbuild/android-arm@0.24.2
+156 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm cache-miss
+157 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 32ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 set size:undefined disposed:false
+159 silly fetch manifest @esbuild/android-x64@0.24.2
+160 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 cache-miss
+161 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 38ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 set size:undefined disposed:false
+163 silly fetch manifest @esbuild/freebsd-x64@0.24.2
+164 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 cache-miss
+165 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 34ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 set size:undefined disposed:false
+167 silly fetch manifest @esbuild/linux-arm64@0.24.2
+168 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 50ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm set size:undefined disposed:false
+171 silly fetch manifest @esbuild/linux-ppc64@0.24.2
+172 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fschemastery 174ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery set size:undefined disposed:false
+175 silly fetch manifest @esbuild/linux-s390x@0.24.2
+176 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fschemastery 175ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery set size:undefined disposed:false
+179 silly fetch manifest @esbuild/openbsd-x64@0.24.2
+180 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fschemastery 175ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery set size:undefined disposed:false
+183 silly fetch manifest @esbuild/win32-arm64@0.24.2
+184 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 38ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 set size:undefined disposed:false
+187 silly fetch manifest @esbuild/darwin-arm64@0.24.2
+188 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 cache-miss
+189 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fschemastery 177ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery set size:undefined disposed:false
+191 silly fetch manifest @esbuild/netbsd-arm64@0.24.2
+192 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 cache-miss
+193 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 34ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 set size:undefined disposed:false
+195 silly fetch manifest @esbuild/android-arm64@0.24.2
+196 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 cache-miss
+197 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai%2fschemastery 195ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/@deepseek-ai%2fschemastery set size:undefined disposed:false
+199 silly fetch manifest @esbuild/freebsd-arm64@0.24.2
+200 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 cache-miss
+201 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 34ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 set size:undefined disposed:false
+203 silly fetch manifest @esbuild/linux-loong64@0.24.2
+204 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 cache-miss
+205 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 36ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x set size:undefined disposed:false
+207 silly fetch manifest @esbuild/linux-riscv64@0.24.2
+208 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 cache-miss
+209 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 38ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 set size:undefined disposed:false
+211 silly fetch manifest @esbuild/openbsd-arm64@0.24.2
+212 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 cache-miss
+213 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 39ms (cache miss)
+214 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 set size:undefined disposed:false
+215 silly fetch manifest @esbuild/linux-mips64el@0.24.2
+216 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el cache-miss
+217 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 51ms (cache miss)
+218 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 set size:undefined disposed:false
+219 silly fetch manifest loose-envify@^1.1.0
+220 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+221 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 34ms (cache miss)
+222 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 set size:undefined disposed:false
+223 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 62ms (cache miss)
+224 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 set size:undefined disposed:false
+225 http fetch GET 200 https://registry.npmjs.org/loose-envify 25ms (cache miss)
+226 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+227 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 28ms (cache miss)
+228 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 set size:undefined disposed:false
+229 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 51ms (cache miss)
+230 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 set size:undefined disposed:false
+231 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 34ms (cache miss)
+232 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el set size:undefined disposed:false
+233 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 45ms (cache miss)
+234 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 set size:undefined disposed:false
+235 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 149ms (cache miss)
+236 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 set size:undefined disposed:false
+237 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 238ms (cache miss)
+238 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 set size:undefined disposed:false
+239 silly placeDep ROOT @deepseek-ai/cosmokit@1.8.3 OK for: @deepseek-ai/cordis@4.0.2 want: ^1.8.3
+240 silly placeDep ROOT @standard-schema/spec@1.1.0 OK for: @deepseek-ai/cordis@4.0.2 want: ^1.1.0
+241 silly placeDep ROOT @deepseek-ai/schemastery@3.18.2 OK for: @deepseek-ai/dsh-invariants@0.0.1-rc.5 want: ^3.18.1-rc.4
+242 silly placeDep ROOT @esbuild/aix-ppc64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+243 silly placeDep ROOT @esbuild/android-arm@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+244 silly placeDep ROOT @esbuild/android-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+245 silly placeDep ROOT @esbuild/android-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+246 silly placeDep ROOT @esbuild/darwin-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+247 silly placeDep ROOT @esbuild/darwin-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+248 silly placeDep ROOT @esbuild/freebsd-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+249 silly placeDep ROOT @esbuild/freebsd-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+250 silly placeDep ROOT @esbuild/linux-arm@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+251 silly placeDep ROOT @esbuild/linux-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+252 silly placeDep ROOT @esbuild/linux-ia32@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+253 silly placeDep ROOT @esbuild/linux-loong64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+254 silly placeDep ROOT @esbuild/linux-mips64el@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+255 silly placeDep ROOT @esbuild/linux-ppc64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+256 silly placeDep ROOT @esbuild/linux-riscv64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+257 silly placeDep ROOT @esbuild/linux-s390x@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+258 silly placeDep ROOT @esbuild/linux-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+259 silly placeDep ROOT @esbuild/netbsd-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+260 silly placeDep ROOT @esbuild/netbsd-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+261 silly placeDep ROOT @esbuild/openbsd-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+262 silly placeDep ROOT @esbuild/openbsd-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+263 silly placeDep ROOT @esbuild/sunos-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+264 silly placeDep ROOT @esbuild/win32-arm64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+265 silly placeDep ROOT @esbuild/win32-ia32@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+266 silly placeDep ROOT @esbuild/win32-x64@0.24.2 OK for: esbuild@0.24.2 want: 0.24.2
+267 silly placeDep ROOT loose-envify@1.4.0 OK for: react@18.3.1 want: ^1.1.0
+268 silly fetch manifest js-tokens@^3.0.0 || ^4.0.0
+269 silly packumentCache full:https://registry.npmjs.org/js-tokens cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/js-tokens 20ms (cache miss)
+271 silly packumentCache full:https://registry.npmjs.org/js-tokens set size:undefined disposed:false
+272 silly placeDep ROOT js-tokens@4.0.0 OK for: loose-envify@1.4.0 want: ^3.0.0 || ^4.0.0
+273 silly reify moves {}
+274 silly audit bulk request {
+274 silly audit   '@deepseek-ai/dsh-tools': [ '0.0.1-rc.1' ],
+274 silly audit   '@deepseek-ai/cordis': [ '4.0.2' ],
+274 silly audit   '@deepseek-ai/dsh-llm': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-brand': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-invariants': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-timeout': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-attachment': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-agent': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-scope': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-session': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-typert-protocol': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-system-prompt': [ '0.0.1-rc.5' ],
+274 silly audit   '@deepseek-ai/dsh-code-runtime': [ '0.0.1-rc.1' ],
+274 silly audit   '@deepseek-ai/dsh-user-approval': [ '0.0.1-rc.1' ],
+274 silly audit   esbuild: [ '0.24.2' ],
+274 silly audit   react: [ '18.3.1' ],
+274 silly audit   '@deepseek-ai/cosmokit': [ '1.8.3' ],
+274 silly audit   '@standard-schema/spec': [ '1.1.0' ],
+274 silly audit   '@deepseek-ai/schemastery': [ '3.18.2' ],
+274 silly audit   '@esbuild/aix-ppc64': [ '0.24.2' ],
+274 silly audit   '@esbuild/android-arm': [ '0.24.2' ],
+274 silly audit   '@esbuild/android-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/android-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/darwin-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/darwin-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/freebsd-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/freebsd-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-arm': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-ia32': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-loong64': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-mips64el': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-ppc64': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-riscv64': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-s390x': [ '0.24.2' ],
+274 silly audit   '@esbuild/linux-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/netbsd-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/netbsd-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/openbsd-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/openbsd-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/sunos-x64': [ '0.24.2' ],
+274 silly audit   '@esbuild/win32-arm64': [ '0.24.2' ],
+274 silly audit   '@esbuild/win32-ia32': [ '0.24.2' ],
+274 silly audit   '@esbuild/win32-x64': [ '0.24.2' ],
+274 silly audit   'loose-envify': [ '1.4.0' ],
+274 silly audit   'js-tokens': [ '4.0.0' ]
+274 silly audit }
+275 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-x64
+276 silly reify mark deleted [
+276 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-x64'
+276 silly reify ]
+277 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-ia32
+278 silly reify mark deleted [
+278 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-ia32'
+278 silly reify ]
+279 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-arm64
+280 silly reify mark deleted [
+280 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-arm64'
+280 silly reify ]
+281 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/sunos-x64
+282 silly reify mark deleted [
+282 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/sunos-x64'
+282 silly reify ]
+283 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-x64
+284 silly reify mark deleted [
+284 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-x64'
+284 silly reify ]
+285 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-arm64
+286 silly reify mark deleted [
+286 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-arm64'
+286 silly reify ]
+287 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-x64
+288 silly reify mark deleted [
+288 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-x64'
+288 silly reify ]
+289 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-arm64
+290 silly reify mark deleted [
+290 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-arm64'
+290 silly reify ]
+291 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-x64
+292 silly reify mark deleted [
+292 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-x64'
+292 silly reify ]
+293 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-s390x
+294 silly reify mark deleted [
+294 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-s390x'
+294 silly reify ]
+295 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-riscv64
+296 silly reify mark deleted [
+296 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-riscv64'
+296 silly reify ]
+297 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ppc64
+298 silly reify mark deleted [
+298 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ppc64'
+298 silly reify ]
+299 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-mips64el
+300 silly reify mark deleted [
+300 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-mips64el'
+300 silly reify ]
+301 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-loong64
+302 silly reify mark deleted [
+302 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-loong64'
+302 silly reify ]
+303 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ia32
+304 silly reify mark deleted [
+304 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ia32'
+304 silly reify ]
+305 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm64
+306 silly reify mark deleted [
+306 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm64'
+306 silly reify ]
+307 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm
+308 silly reify mark deleted [
+308 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm'
+308 silly reify ]
+309 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-x64
+310 silly reify mark deleted [
+310 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-x64'
+310 silly reify ]
+311 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-arm64
+312 silly reify mark deleted [
+312 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-arm64'
+312 silly reify ]
+313 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/darwin-x64
+314 silly reify mark deleted [
+314 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/darwin-x64'
+314 silly reify ]
+315 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-x64
+316 silly reify mark deleted [
+316 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-x64'
+316 silly reify ]
+317 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm64
+318 silly reify mark deleted [
+318 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm64'
+318 silly reify ]
+319 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm
+320 silly reify mark deleted [
+320 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm'
+320 silly reify ]
+321 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/aix-ppc64
+322 silly reify mark deleted [
+322 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/aix-ppc64'
+322 silly reify ]
+323 http cache js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 0ms (cache hit)
+324 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+325 http cache @deepseek-ai/schemastery@https://registry.npmjs.org/@deepseek-ai/schemastery/-/schemastery-3.18.2.tgz 0ms (cache hit)
+326 http cache @esbuild/darwin-arm64@https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.24.2.tgz 0ms (cache hit)
+327 http cache @standard-schema/spec@https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz 0ms (cache hit)
+328 http cache @deepseek-ai/cosmokit@https://registry.npmjs.org/@deepseek-ai/cosmokit/-/cosmokit-1.8.3.tgz 0ms (cache hit)
+329 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.24.2.tgz 0ms (cache hit)
+330 http cache @deepseek-ai/dsh-user-approval@https://registry.npmjs.org/@deepseek-ai/dsh-user-approval/-/dsh-user-approval-0.0.1-rc.1.tgz 0ms (cache hit)
+331 http cache react@https://registry.npmjs.org/react/-/react-18.3.1.tgz 0ms (cache hit)
+332 http cache @deepseek-ai/dsh-code-runtime@https://registry.npmjs.org/@deepseek-ai/dsh-code-runtime/-/dsh-code-runtime-0.0.1-rc.1.tgz 0ms (cache hit)
+333 http cache @deepseek-ai/dsh-session@https://registry.npmjs.org/@deepseek-ai/dsh-session/-/dsh-session-0.0.1-rc.5.tgz 0ms (cache hit)
+334 http cache @deepseek-ai/dsh-system-prompt@https://registry.npmjs.org/@deepseek-ai/dsh-system-prompt/-/dsh-system-prompt-0.0.1-rc.5.tgz 0ms (cache hit)
+335 http cache @deepseek-ai/dsh-scope@https://registry.npmjs.org/@deepseek-ai/dsh-scope/-/dsh-scope-0.0.1-rc.5.tgz 0ms (cache hit)
+336 http cache @deepseek-ai/dsh-agent@https://registry.npmjs.org/@deepseek-ai/dsh-agent/-/dsh-agent-0.0.1-rc.5.tgz 0ms (cache hit)
+337 http cache @deepseek-ai/dsh-attachment@https://registry.npmjs.org/@deepseek-ai/dsh-attachment/-/dsh-attachment-0.0.1-rc.5.tgz 0ms (cache hit)
+338 http cache @deepseek-ai/dsh-timeout@https://registry.npmjs.org/@deepseek-ai/dsh-timeout/-/dsh-timeout-0.0.1-rc.5.tgz 0ms (cache hit)
+339 http cache @deepseek-ai/dsh-invariants@https://registry.npmjs.org/@deepseek-ai/dsh-invariants/-/dsh-invariants-0.0.1-rc.5.tgz 0ms (cache hit)
+340 http cache @deepseek-ai/dsh-brand@https://registry.npmjs.org/@deepseek-ai/dsh-brand/-/dsh-brand-0.0.1-rc.5.tgz 0ms (cache hit)
+341 http cache @deepseek-ai/dsh-llm@https://registry.npmjs.org/@deepseek-ai/dsh-llm/-/dsh-llm-0.0.1-rc.5.tgz 0ms (cache hit)
+342 http cache @deepseek-ai/dsh-typert-protocol@https://registry.npmjs.org/@deepseek-ai/dsh-typert-protocol/-/dsh-typert-protocol-0.0.1-rc.5.tgz 0ms (cache hit)
+343 silly tarball no local data for js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz. Extracting by manifest.
+344 silly tarball no local data for loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+345 silly tarball no local data for @deepseek-ai/schemastery@https://registry.npmjs.org/@deepseek-ai/schemastery/-/schemastery-3.18.2.tgz. Extracting by manifest.
+346 silly tarball no local data for @esbuild/darwin-arm64@https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.24.2.tgz. Extracting by manifest.
+347 http cache @deepseek-ai/cordis@https://registry.npmjs.org/@deepseek-ai/cordis/-/cordis-4.0.2.tgz 0ms (cache hit)
+348 http cache @deepseek-ai/dsh-tools@https://registry.npmjs.org/@deepseek-ai/dsh-tools/-/dsh-tools-0.0.1-rc.1.tgz 0ms (cache hit)
+349 silly tarball no local data for @standard-schema/spec@https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz. Extracting by manifest.
+350 silly tarball no local data for @deepseek-ai/cosmokit@https://registry.npmjs.org/@deepseek-ai/cosmokit/-/cosmokit-1.8.3.tgz. Extracting by manifest.
+351 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.24.2.tgz. Extracting by manifest.
+352 silly tarball no local data for @deepseek-ai/dsh-user-approval@https://registry.npmjs.org/@deepseek-ai/dsh-user-approval/-/dsh-user-approval-0.0.1-rc.1.tgz. Extracting by manifest.
+353 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-18.3.1.tgz. Extracting by manifest.
+354 silly tarball no local data for @deepseek-ai/dsh-code-runtime@https://registry.npmjs.org/@deepseek-ai/dsh-code-runtime/-/dsh-code-runtime-0.0.1-rc.1.tgz. Extracting by manifest.
+355 silly tarball no local data for @deepseek-ai/dsh-session@https://registry.npmjs.org/@deepseek-ai/dsh-session/-/dsh-session-0.0.1-rc.5.tgz. Extracting by manifest.
+356 silly tarball no local data for @deepseek-ai/dsh-system-prompt@https://registry.npmjs.org/@deepseek-ai/dsh-system-prompt/-/dsh-system-prompt-0.0.1-rc.5.tgz. Extracting by manifest.
+357 silly tarball no local data for @deepseek-ai/dsh-scope@https://registry.npmjs.org/@deepseek-ai/dsh-scope/-/dsh-scope-0.0.1-rc.5.tgz. Extracting by manifest.
+358 silly tarball no local data for @deepseek-ai/dsh-agent@https://registry.npmjs.org/@deepseek-ai/dsh-agent/-/dsh-agent-0.0.1-rc.5.tgz. Extracting by manifest.
+359 silly tarball no local data for @deepseek-ai/dsh-attachment@https://registry.npmjs.org/@deepseek-ai/dsh-attachment/-/dsh-attachment-0.0.1-rc.5.tgz. Extracting by manifest.
+360 silly tarball no local data for @deepseek-ai/dsh-timeout@https://registry.npmjs.org/@deepseek-ai/dsh-timeout/-/dsh-timeout-0.0.1-rc.5.tgz. Extracting by manifest.
+361 silly tarball no local data for @deepseek-ai/dsh-invariants@https://registry.npmjs.org/@deepseek-ai/dsh-invariants/-/dsh-invariants-0.0.1-rc.5.tgz. Extracting by manifest.
+362 silly tarball no local data for @deepseek-ai/dsh-brand@https://registry.npmjs.org/@deepseek-ai/dsh-brand/-/dsh-brand-0.0.1-rc.5.tgz. Extracting by manifest.
+363 silly tarball no local data for @deepseek-ai/dsh-llm@https://registry.npmjs.org/@deepseek-ai/dsh-llm/-/dsh-llm-0.0.1-rc.5.tgz. Extracting by manifest.
+364 silly tarball no local data for @deepseek-ai/dsh-typert-protocol@https://registry.npmjs.org/@deepseek-ai/dsh-typert-protocol/-/dsh-typert-protocol-0.0.1-rc.5.tgz. Extracting by manifest.
+365 silly tarball no local data for @deepseek-ai/cordis@https://registry.npmjs.org/@deepseek-ai/cordis/-/cordis-4.0.2.tgz. Extracting by manifest.
+366 silly tarball no local data for @deepseek-ai/dsh-tools@https://registry.npmjs.org/@deepseek-ai/dsh-tools/-/dsh-tools-0.0.1-rc.1.tgz. Extracting by manifest.
+367 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.24.2.tgz 26ms (cache miss)
+368 http fetch GET 200 https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 27ms (cache miss)
+369 http fetch GET 200 https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 43ms (cache miss)
+370 http fetch GET 200 https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz 47ms (cache miss)
+371 http fetch GET 200 https://registry.npmjs.org/react/-/react-18.3.1.tgz 49ms (cache miss)
+372 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/cosmokit/-/cosmokit-1.8.3.tgz 61ms (cache miss)
+373 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/schemastery/-/schemastery-3.18.2.tgz 65ms (cache miss)
+374 http fetch GET 200 https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.24.2.tgz 94ms (cache miss)
+375 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/cordis/-/cordis-4.0.2.tgz 110ms (cache miss)
+376 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-code-runtime/-/dsh-code-runtime-0.0.1-rc.1.tgz 196ms (cache miss)
+377 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 208ms
+378 silly audit report {
+378 silly audit report   esbuild: [
+378 silly audit report     {
+378 silly audit report       id: 1102341,
+378 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+378 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+378 silly audit report       severity: 'moderate',
+378 silly audit report       vulnerable_versions: '<=0.24.2',
+378 silly audit report       cwe: [Array],
+378 silly audit report       cvss: [Object]
+378 silly audit report     }
+378 silly audit report   ]
+378 silly audit report }
+379 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+380 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-user-approval/-/dsh-user-approval-0.0.1-rc.1.tgz 208ms (cache miss)
+381 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-scope/-/dsh-scope-0.0.1-rc.5.tgz 209ms (cache miss)
+382 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-timeout/-/dsh-timeout-0.0.1-rc.5.tgz 221ms (cache miss)
+383 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-system-prompt/-/dsh-system-prompt-0.0.1-rc.5.tgz 221ms (cache miss)
+384 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-session/-/dsh-session-0.0.1-rc.5.tgz 223ms (cache miss)
+385 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-invariants/-/dsh-invariants-0.0.1-rc.5.tgz 232ms (cache miss)
+386 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-attachment/-/dsh-attachment-0.0.1-rc.5.tgz 236ms (cache miss)
+387 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-typert-protocol/-/dsh-typert-protocol-0.0.1-rc.5.tgz 235ms (cache miss)
+388 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-brand/-/dsh-brand-0.0.1-rc.5.tgz 253ms (cache miss)
+389 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-llm/-/dsh-llm-0.0.1-rc.5.tgz 257ms (cache miss)
+390 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-agent/-/dsh-agent-0.0.1-rc.5.tgz 259ms (cache miss)
+391 http fetch GET 200 https://registry.npmjs.org/@deepseek-ai/dsh-tools/-/dsh-tools-0.0.1-rc.1.tgz 261ms (cache miss)
+392 http fetch GET 200 https://registry.npmjs.org/esbuild 81ms (cache miss)
+393 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:undefined disposed:false
+394 silly ADD node_modules/js-tokens
+395 silly ADD node_modules/loose-envify
+396 silly ADD
+397 silly ADD
+398 silly ADD
+399 silly ADD
+400 silly ADD
+401 silly ADD
+402 silly ADD
+403 silly ADD
+404 silly ADD
+405 silly ADD
+406 silly ADD
+407 silly ADD
+408 silly ADD
+409 silly ADD
+410 silly ADD
+411 silly ADD
+412 silly ADD
+413 silly ADD
+414 silly ADD
+415 silly ADD
+416 silly ADD node_modules/@esbuild/darwin-arm64
+417 silly ADD
+418 silly ADD
+419 silly ADD
+420 silly ADD
+421 silly ADD node_modules/@deepseek-ai/schemastery
+422 silly ADD node_modules/@standard-schema/spec
+423 silly ADD node_modules/@deepseek-ai/cosmokit
+424 silly ADD node_modules/react
+425 silly ADD node_modules/esbuild
+426 silly ADD node_modules/@deepseek-ai/dsh-user-approval
+427 silly ADD node_modules/@deepseek-ai/dsh-code-runtime
+428 silly ADD node_modules/@deepseek-ai/dsh-system-prompt
+429 silly ADD node_modules/@deepseek-ai/dsh-typert-protocol
+430 silly ADD node_modules/@deepseek-ai/dsh-session
+431 silly ADD node_modules/@deepseek-ai/dsh-scope
+432 silly ADD node_modules/@deepseek-ai/dsh-agent
+433 silly ADD node_modules/@deepseek-ai/dsh-attachment
+434 silly ADD node_modules/@deepseek-ai/dsh-timeout
+435 silly ADD node_modules/@deepseek-ai/dsh-invariants
+436 silly ADD node_modules/@deepseek-ai/dsh-brand
+437 silly ADD node_modules/@deepseek-ai/dsh-llm
+438 silly ADD node_modules/@deepseek-ai/cordis
+439 silly ADD node_modules/@deepseek-ai/dsh-tools
+440 verbose cwd /Users/acetyl/dsh_test/dsh-artifact-viewer
+441 verbose os Darwin 25.5.0
+442 verbose node v22.22.0
+443 verbose npm  v10.9.4
+444 notice
+444 notice New major version of npm available! 10.9.4 -> 12.0.2
+444 notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+444 notice To update run: npm install -g npm@12.0.2
+444 notice  { force: true, [Symbol(proc-log.meta)]: true }
+445 verbose exit 0
+446 info ok

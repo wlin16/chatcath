@@ -1,0 +1,16 @@
+packages:
+  - .
+  - plugins/*
+
+nodeLinker: hoisted
+autoInstallPeers: false
+allowBuilds:
+  protobufjs: false
+  koffi: false
+  node-pty: true
+  cpu-features: true
+  ssh2: true
+  '@deepseek-ai/dsh-subprocess-local': true
+  '@google/genai': false
+  esbuild: false
+minimumReleaseAge: 0

@@ -1,0 +1,6 @@
+# Profile patch layer, applied after every bundle layer (see dsh docs).
+# dshmarket: show the "restart dsh" button in settings.
+- id: dsh-market
+  name: dshmarket
+  config:
+    allowRestart: true

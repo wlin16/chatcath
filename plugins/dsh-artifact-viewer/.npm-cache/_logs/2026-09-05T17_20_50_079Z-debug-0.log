@@ -1,0 +1,416 @@
+0 verbose cli /opt/homebrew/Cellar/node@22/22.22.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.0
+3 silly config load:file:/opt/homebrew/Cellar/node@22/22.22.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/acetyl/dsh_test/dsh-artifact-viewer/.npmrc
+5 silly config load:file:/Users/acetyl/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install jszip fast-xml-parser
+8 verbose argv "install" "jszip" "fast-xml-parser" "--save" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/acetyl/dsh_test/dsh-artifact-viewer/.npm-cache/_logs/2026-09-05T17_20_50_079Z-
+10 verbose logfile /Users/acetyl/dsh_test/dsh-artifact-viewer/.npm-cache/_logs/2026-09-05T17_20_50_079Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest jszip@*
+15 silly packumentCache full:https://registry.npmjs.org/jszip cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/jszip 49ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/jszip set size:undefined disposed:false
+18 silly fetch manifest fast-xml-parser@*
+19 silly packumentCache full:https://registry.npmjs.org/fast-xml-parser cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/fast-xml-parser 26ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/fast-xml-parser set size:undefined disposed:false
+22 silly placeDep ROOT fast-xml-parser@5.11.1 OK for: dsh-artifact-viewer@0.1.0 want: *
+23 silly placeDep ROOT jszip@3.10.1 OK for: dsh-artifact-viewer@0.1.0 want: *
+24 silly fetch manifest strnum@^2.4.2
+25 silly packumentCache full:https://registry.npmjs.org/strnum cache-miss
+26 silly fetch manifest is-unsafe@^2.0.0
+27 silly packumentCache full:https://registry.npmjs.org/is-unsafe cache-miss
+28 silly fetch manifest xml-naming@^0.3.0
+29 silly packumentCache full:https://registry.npmjs.org/xml-naming cache-miss
+30 silly fetch manifest fast-xml-builder@^1.2.0
+31 silly packumentCache full:https://registry.npmjs.org/fast-xml-builder cache-miss
+32 silly fetch manifest @nodable/entities@^3.0.0
+33 silly packumentCache full:https://registry.npmjs.org/@nodable%2fentities cache-miss
+34 silly fetch manifest path-expression-matcher@^1.6.2
+35 silly packumentCache full:https://registry.npmjs.org/path-expression-matcher cache-miss
+36 silly fetch manifest lie@~3.3.0
+37 silly packumentCache full:https://registry.npmjs.org/lie cache-miss
+38 silly fetch manifest pako@~1.0.2
+39 silly packumentCache full:https://registry.npmjs.org/pako cache-miss
+40 silly fetch manifest setimmediate@^1.0.5
+41 silly packumentCache full:https://registry.npmjs.org/setimmediate cache-miss
+42 http fetch GET 200 https://registry.npmjs.org/strnum 27ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/strnum set size:undefined disposed:false
+44 silly fetch manifest readable-stream@~2.3.6
+45 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+46 http fetch GET 200 https://registry.npmjs.org/fast-xml-builder 44ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/fast-xml-builder set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/path-expression-matcher 45ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/path-expression-matcher set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/is-unsafe 45ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/is-unsafe set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/pako 44ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/pako set size:undefined disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/lie 47ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/lie set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/xml-naming 49ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/xml-naming set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/setimmediate 51ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/setimmediate set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/readable-stream 25ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/@nodable%2fentities 72ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/@nodable%2fentities set size:undefined disposed:false
+64 silly placeDep ROOT @nodable/entities@3.0.0 OK for: fast-xml-parser@5.11.1 want: ^3.0.0
+65 silly placeDep ROOT fast-xml-builder@1.3.1 OK for: fast-xml-parser@5.11.1 want: ^1.2.0
+66 silly placeDep ROOT is-unsafe@2.0.2 OK for: fast-xml-parser@5.11.1 want: ^2.0.0
+67 silly placeDep ROOT path-expression-matcher@1.6.2 OK for: fast-xml-parser@5.11.1 want: ^1.6.2
+68 silly placeDep ROOT strnum@2.4.2 OK for: fast-xml-parser@5.11.1 want: ^2.4.2
+69 silly placeDep ROOT xml-naming@0.3.0 OK for: fast-xml-parser@5.11.1 want: ^0.3.0
+70 silly fetch manifest anynum@^1.0.1
+71 silly packumentCache full:https://registry.npmjs.org/anynum cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/anynum 15ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/anynum set size:undefined disposed:false
+74 silly placeDep ROOT lie@3.3.0 OK for: jszip@3.10.1 want: ~3.3.0
+75 silly placeDep ROOT pako@1.0.11 OK for: jszip@3.10.1 want: ~1.0.2
+76 silly placeDep ROOT readable-stream@2.3.8 OK for: jszip@3.10.1 want: ~2.3.6
+77 silly placeDep ROOT setimmediate@1.0.5 OK for: jszip@3.10.1 want: ^1.0.5
+78 silly fetch manifest immediate@~3.0.5
+79 silly packumentCache full:https://registry.npmjs.org/immediate cache-miss
+80 silly fetch manifest isarray@~1.0.0
+81 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+82 silly fetch manifest inherits@~2.0.3
+83 silly packumentCache full:https://registry.npmjs.org/inherits cache-miss
+84 silly fetch manifest safe-buffer@~5.1.1
+85 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+86 silly fetch manifest core-util-is@~1.0.0
+87 silly packumentCache full:https://registry.npmjs.org/core-util-is cache-miss
+88 silly fetch manifest string_decoder@~1.1.1
+89 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+90 silly fetch manifest util-deprecate@~1.0.1
+91 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+92 silly fetch manifest process-nextick-args@~2.0.0
+93 silly packumentCache full:https://registry.npmjs.org/process-nextick-args cache-miss
+94 http fetch GET 200 https://registry.npmjs.org/isarray 21ms (cache miss)
+95 silly packumentCache full:https://registry.npmjs.org/isarray set size:undefined disposed:false
+96 http fetch GET 200 https://registry.npmjs.org/core-util-is 22ms (cache miss)
+97 silly packumentCache full:https://registry.npmjs.org/core-util-is set size:undefined disposed:false
+98 http fetch GET 200 https://registry.npmjs.org/inherits 22ms (cache miss)
+99 silly packumentCache full:https://registry.npmjs.org/inherits set size:undefined disposed:false
+100 http fetch GET 200 https://registry.npmjs.org/util-deprecate 22ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:undefined disposed:false
+102 http fetch GET 200 https://registry.npmjs.org/safe-buffer 22ms (cache miss)
+103 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+104 http fetch GET 200 https://registry.npmjs.org/immediate 23ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/immediate set size:undefined disposed:false
+106 http fetch GET 200 https://registry.npmjs.org/string_decoder 27ms (cache miss)
+107 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:undefined disposed:false
+108 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 28ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/process-nextick-args set size:undefined disposed:false
+110 silly placeDep ROOT immediate@3.0.6 OK for: lie@3.3.0 want: ~3.0.5
+111 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+112 silly placeDep ROOT inherits@2.0.4 OK for: readable-stream@2.3.8 want: ~2.0.3
+113 silly placeDep ROOT isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+114 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+115 silly placeDep ROOT safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+116 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+117 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+118 silly placeDep ROOT anynum@1.0.1 OK for: strnum@2.4.2 want: ^1.0.1
+119 silly reify moves {}
+120 silly audit bulk request {
+120 silly audit   '@deepseek-ai/cordis': [ '4.0.2' ],
+120 silly audit   '@deepseek-ai/cosmokit': [ '1.8.3' ],
+120 silly audit   '@deepseek-ai/dsh-agent': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-attachment': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-brand': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-code-runtime': [ '0.0.1-rc.1' ],
+120 silly audit   '@deepseek-ai/dsh-invariants': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-llm': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-scope': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-session': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-system-prompt': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-timeout': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-tools': [ '0.0.1-rc.1' ],
+120 silly audit   '@deepseek-ai/dsh-typert-protocol': [ '0.0.1-rc.5' ],
+120 silly audit   '@deepseek-ai/dsh-user-approval': [ '0.0.1-rc.1' ],
+120 silly audit   '@deepseek-ai/schemastery': [ '3.18.2' ],
+120 silly audit   '@esbuild/aix-ppc64': [ '0.24.2' ],
+120 silly audit   '@esbuild/android-arm': [ '0.24.2' ],
+120 silly audit   '@esbuild/android-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/android-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/darwin-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/darwin-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/freebsd-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/freebsd-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-arm': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-ia32': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-loong64': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-mips64el': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-ppc64': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-riscv64': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-s390x': [ '0.24.2' ],
+120 silly audit   '@esbuild/linux-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/netbsd-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/netbsd-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/openbsd-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/openbsd-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/sunos-x64': [ '0.24.2' ],
+120 silly audit   '@esbuild/win32-arm64': [ '0.24.2' ],
+120 silly audit   '@esbuild/win32-ia32': [ '0.24.2' ],
+120 silly audit   '@esbuild/win32-x64': [ '0.24.2' ],
+120 silly audit   '@standard-schema/spec': [ '1.1.0' ],
+120 silly audit   esbuild: [ '0.24.2' ],
+120 silly audit   'js-tokens': [ '4.0.0' ],
+120 silly audit   'loose-envify': [ '1.4.0' ],
+120 silly audit   react: [ '18.3.1' ],
+120 silly audit   'fast-xml-parser': [ '5.11.1' ],
+120 silly audit   jszip: [ '3.10.1' ],
+120 silly audit   '@nodable/entities': [ '3.0.0' ],
+120 silly audit   'fast-xml-builder': [ '1.3.1' ],
+120 silly audit   'is-unsafe': [ '2.0.2' ],
+120 silly audit   'path-expression-matcher': [ '1.6.2' ],
+120 silly audit   strnum: [ '2.4.2' ],
+120 silly audit   'xml-naming': [ '0.3.0' ],
+120 silly audit   lie: [ '3.3.0' ],
+120 silly audit   pako: [ '1.0.11' ],
+120 silly audit   'readable-stream': [ '2.3.8' ],
+120 silly audit   setimmediate: [ '1.0.5' ],
+120 silly audit   immediate: [ '3.0.6' ],
+120 silly audit   'core-util-is': [ '1.0.3' ],
+120 silly audit   inherits: [ '2.0.4' ],
+120 silly audit   isarray: [ '1.0.0' ],
+120 silly audit   'process-nextick-args': [ '2.0.1' ],
+120 silly audit   'safe-buffer': [ '5.1.2' ],
+120 silly audit   string_decoder: [ '1.1.1' ],
+120 silly audit   'util-deprecate': [ '1.0.2' ],
+120 silly audit   anynum: [ '1.0.1' ]
+120 silly audit }
+121 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-x64
+122 silly reify mark deleted [
+122 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-x64'
+122 silly reify ]
+123 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-ia32
+124 silly reify mark deleted [
+124 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-ia32'
+124 silly reify ]
+125 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-arm64
+126 silly reify mark deleted [
+126 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/win32-arm64'
+126 silly reify ]
+127 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/sunos-x64
+128 silly reify mark deleted [
+128 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/sunos-x64'
+128 silly reify ]
+129 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-x64
+130 silly reify mark deleted [
+130 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-x64'
+130 silly reify ]
+131 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-arm64
+132 silly reify mark deleted [
+132 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/openbsd-arm64'
+132 silly reify ]
+133 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-x64
+134 silly reify mark deleted [
+134 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-x64'
+134 silly reify ]
+135 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-arm64
+136 silly reify mark deleted [
+136 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/netbsd-arm64'
+136 silly reify ]
+137 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-x64
+138 silly reify mark deleted [
+138 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-x64'
+138 silly reify ]
+139 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-s390x
+140 silly reify mark deleted [
+140 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-s390x'
+140 silly reify ]
+141 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-riscv64
+142 silly reify mark deleted [
+142 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-riscv64'
+142 silly reify ]
+143 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ppc64
+144 silly reify mark deleted [
+144 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ppc64'
+144 silly reify ]
+145 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-mips64el
+146 silly reify mark deleted [
+146 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-mips64el'
+146 silly reify ]
+147 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-loong64
+148 silly reify mark deleted [
+148 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-loong64'
+148 silly reify ]
+149 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ia32
+150 silly reify mark deleted [
+150 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-ia32'
+150 silly reify ]
+151 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm64
+152 silly reify mark deleted [
+152 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm64'
+152 silly reify ]
+153 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm
+154 silly reify mark deleted [
+154 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/linux-arm'
+154 silly reify ]
+155 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-x64
+156 silly reify mark deleted [
+156 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-x64'
+156 silly reify ]
+157 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-arm64
+158 silly reify mark deleted [
+158 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/freebsd-arm64'
+158 silly reify ]
+159 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/darwin-x64
+160 silly reify mark deleted [
+160 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/darwin-x64'
+160 silly reify ]
+161 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-x64
+162 silly reify mark deleted [
+162 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-x64'
+162 silly reify ]
+163 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm64
+164 silly reify mark deleted [
+164 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm64'
+164 silly reify ]
+165 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm
+166 silly reify mark deleted [
+166 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/android-arm'
+166 silly reify ]
+167 verbose reify failed optional dependency /Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/aix-ppc64
+168 silly reify mark deleted [
+168 silly reify   '/Users/acetyl/dsh_test/dsh-artifact-viewer/node_modules/@esbuild/aix-ppc64'
+168 silly reify ]
+169 http cache anynum@https://registry.npmjs.org/anynum/-/anynum-1.0.1.tgz 0ms (cache hit)
+170 http cache util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 0ms (cache hit)
+171 http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 0ms (cache hit)
+172 http cache process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 0ms (cache hit)
+173 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 0ms (cache hit)
+174 http cache inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 0ms (cache hit)
+175 http cache core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 0ms (cache hit)
+176 http cache isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 0ms (cache hit)
+177 http cache immediate@https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz 0ms (cache hit)
+178 http cache setimmediate@https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz 0ms (cache hit)
+179 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 0ms (cache hit)
+180 http cache pako@https://registry.npmjs.org/pako/-/pako-1.0.11.tgz 0ms (cache hit)
+181 http cache lie@https://registry.npmjs.org/lie/-/lie-3.3.0.tgz 0ms (cache hit)
+182 http cache xml-naming@https://registry.npmjs.org/xml-naming/-/xml-naming-0.3.0.tgz 0ms (cache hit)
+183 http cache strnum@https://registry.npmjs.org/strnum/-/strnum-2.4.2.tgz 0ms (cache hit)
+184 http cache path-expression-matcher@https://registry.npmjs.org/path-expression-matcher/-/path-expression-matcher-1.6.2.tgz 0ms (cache hit)
+185 http cache is-unsafe@https://registry.npmjs.org/is-unsafe/-/is-unsafe-2.0.2.tgz 0ms (cache hit)
+186 http cache fast-xml-builder@https://registry.npmjs.org/fast-xml-builder/-/fast-xml-builder-1.3.1.tgz 0ms (cache hit)
+187 http cache @nodable/entities@https://registry.npmjs.org/@nodable/entities/-/entities-3.0.0.tgz 0ms (cache hit)
+188 http cache fast-xml-parser@https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-5.11.1.tgz 0ms (cache hit)
+189 http cache jszip@https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz 0ms (cache hit)
+190 silly tarball no local data for anynum@https://registry.npmjs.org/anynum/-/anynum-1.0.1.tgz. Extracting by manifest.
+191 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+192 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+193 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+194 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+195 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+196 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+197 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+198 silly tarball no local data for setimmediate@https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz. Extracting by manifest.
+199 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz. Extracting by manifest.
+200 silly tarball no local data for pako@https://registry.npmjs.org/pako/-/pako-1.0.11.tgz. Extracting by manifest.
+201 silly tarball no local data for immediate@https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz. Extracting by manifest.
+202 silly tarball no local data for lie@https://registry.npmjs.org/lie/-/lie-3.3.0.tgz. Extracting by manifest.
+203 silly tarball no local data for xml-naming@https://registry.npmjs.org/xml-naming/-/xml-naming-0.3.0.tgz. Extracting by manifest.
+204 silly tarball no local data for strnum@https://registry.npmjs.org/strnum/-/strnum-2.4.2.tgz. Extracting by manifest.
+205 silly tarball no local data for path-expression-matcher@https://registry.npmjs.org/path-expression-matcher/-/path-expression-matcher-1.6.2.tgz. Extracting by manifest.
+206 silly tarball no local data for is-unsafe@https://registry.npmjs.org/is-unsafe/-/is-unsafe-2.0.2.tgz. Extracting by manifest.
+207 silly tarball no local data for fast-xml-builder@https://registry.npmjs.org/fast-xml-builder/-/fast-xml-builder-1.3.1.tgz. Extracting by manifest.
+208 silly tarball no local data for @nodable/entities@https://registry.npmjs.org/@nodable/entities/-/entities-3.0.0.tgz. Extracting by manifest.
+209 silly tarball no local data for fast-xml-parser@https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-5.11.1.tgz. Extracting by manifest.
+210 silly tarball no local data for jszip@https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz. Extracting by manifest.
+211 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 29ms (cache miss)
+212 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 30ms (cache miss)
+213 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 30ms (cache miss)
+214 http fetch GET 200 https://registry.npmjs.org/anynum/-/anynum-1.0.1.tgz 31ms (cache miss)
+215 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 30ms (cache miss)
+216 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 30ms (cache miss)
+217 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 30ms (cache miss)
+218 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 30ms (cache miss)
+219 http fetch GET 200 https://registry.npmjs.org/xml-naming/-/xml-naming-0.3.0.tgz 33ms (cache miss)
+220 http fetch GET 200 https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz 37ms (cache miss)
+221 http fetch GET 200 https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz 37ms (cache miss)
+222 http fetch GET 200 https://registry.npmjs.org/is-unsafe/-/is-unsafe-2.0.2.tgz 43ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 46ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/strnum/-/strnum-2.4.2.tgz 47ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/fast-xml-builder/-/fast-xml-builder-1.3.1.tgz 51ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/path-expression-matcher/-/path-expression-matcher-1.6.2.tgz 52ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/pako/-/pako-1.0.11.tgz 59ms (cache miss)
+228 http fetch GET 200 https://registry.npmjs.org/@nodable/entities/-/entities-3.0.0.tgz 63ms (cache miss)
+229 http fetch GET 200 https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz 71ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/lie/-/lie-3.3.0.tgz 74ms (cache miss)
+231 http fetch GET 200 https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-5.11.1.tgz 73ms (cache miss)
+232 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 160ms
+233 silly audit report {
+233 silly audit report   esbuild: [
+233 silly audit report     {
+233 silly audit report       id: 1102341,
+233 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+233 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+233 silly audit report       severity: 'moderate',
+233 silly audit report       vulnerable_versions: '<=0.24.2',
+233 silly audit report       cwe: [Array],
+233 silly audit report       cvss: [Object]
+233 silly audit report     }
+233 silly audit report   ]
+233 silly audit report }
+234 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+235 http fetch GET 200 https://registry.npmjs.org/esbuild 27ms (cache revalidated)
+236 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:889133 disposed:false
+237 silly ADD node_modules/anynum
+238 silly ADD node_modules/util-deprecate
+239 silly ADD node_modules/string_decoder
+240 silly ADD node_modules/safe-buffer
+241 silly ADD node_modules/process-nextick-args
+242 silly ADD node_modules/isarray
+243 silly ADD node_modules/inherits
+244 silly ADD node_modules/core-util-is
+245 silly ADD node_modules/immediate
+246 silly ADD node_modules/setimmediate
+247 silly ADD node_modules/readable-stream
+248 silly ADD node_modules/pako
+249 silly ADD node_modules/lie
+250 silly ADD node_modules/xml-naming
+251 silly ADD node_modules/strnum
+252 silly ADD node_modules/path-expression-matcher
+253 silly ADD node_modules/is-unsafe
+254 silly ADD node_modules/fast-xml-builder
+255 silly ADD node_modules/@nodable/entities
+256 silly ADD node_modules/jszip
+257 silly ADD node_modules/fast-xml-parser
+258 silly ADD
+259 silly ADD
+260 silly ADD
+261 silly ADD
+262 silly ADD
+263 silly ADD
+264 silly ADD
+265 silly ADD
+266 silly ADD
+267 silly ADD
+268 silly ADD
+269 silly ADD
+270 silly ADD
+271 silly ADD
+272 silly ADD
+273 silly ADD
+274 silly ADD
+275 silly ADD
+276 silly ADD
+277 silly ADD
+278 silly ADD
+279 silly ADD
+280 silly ADD
+281 silly ADD
+282 verbose cwd /Users/acetyl/dsh_test/dsh-artifact-viewer
+283 verbose os Darwin 25.5.0
+284 verbose node v22.22.0
+285 verbose npm  v10.9.4
+286 verbose exit 0
+287 info ok
