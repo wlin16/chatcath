@@ -14,7 +14,7 @@ import { SETTINGS_UI } from "./ui.js";
 export const name = "chatcath-updater";
 export const inject = ["webServer"];
 
-const ROOT = dirname(dirname(dirname(realpathSync(fileURLToPath(import.meta.url)))));
+const ROOT = dirname(dirname(dirname(dirname(realpathSync(fileURLToPath(import.meta.url))))));   // lib → plugin → plugins → repo root
 const op = { state: "idle", step: "", log: [], startedAt: 0, finishedAt: 0, error: null };
 
 const loopback = (a) => a === "127.0.0.1" || a === "::1" || a === "::ffff:127.0.0.1";
