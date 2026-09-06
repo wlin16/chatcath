@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-	id: "dsh-protein-cards",
+	id: "chatcath-protein-cards",
 	factory: (require) => {
 		var module = { exports: {} };
 		var exports = module.exports;

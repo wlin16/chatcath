@@ -5,5 +5,5 @@ import { fileURLToPath } from 'node:url'
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),tmp=resolve(root,'lib/client.cjs'),out=resolve(root,'lib/client.js')
 await build({entryPoints:[resolve(root,'src/client.jsx')],outfile:tmp,format:'cjs',platform:'browser',target:'es2022',bundle:true,external:['react','react/*','@deepseek-ai/*']})
 const raw=readFileSync(tmp,'utf8').split('\n').map(x=>x?'\t\t'+x:'').join('\n')
-writeFileSync(out,`window.__ModuleLoader__.load({\n\tid: "dsh-protein-cards",\n\tfactory: (require) => {\n\t\tvar module = { exports: {} };\n\t\tvar exports = module.exports;\n${raw}\n\t\treturn module.exports;\n\t}\n});\n`)
+writeFileSync(out,`window.__ModuleLoader__.load({\n\tid: "chatcath-protein-cards",\n\tfactory: (require) => {\n\t\tvar module = { exports: {} };\n\t\tvar exports = module.exports;\n${raw}\n\t\treturn module.exports;\n\t}\n});\n`)
 rmSync(tmp,{force:true})

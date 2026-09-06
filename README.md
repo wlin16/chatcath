@@ -1,63 +1,44 @@
-# ChatCath
+# chatCATH
 
-A [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) profile for protein / biotech work:
-a curated plugin set plus the compatibility patches they need on dsh 0.1.2. Same install shape as upstream.
+**chatCATH** is an AI research agent for protein science, built for members of the CATH group.
+It reads and analyses structures, sequences and papers, runs tools in your workspace, and keeps every
+result inside the conversation. It runs locally on your machine and opens in your browser.
 
 ## Install
 
-Requirements: Node.js ≥ 22, pnpm ≥ 10 (`npm i -g pnpm`). macOS or Linux; Python 3 optional (two cosmetic patches skip without it).
+Requirements: Node.js ≥ 22, pnpm ≥ 10 (`npm i -g pnpm`), git. macOS or Linux. Python 3 is optional
+(two cosmetic patches are skipped without it).
 
 ```sh
 git clone https://github.com/wlin16/chatcath.git
 cd chatcath
 pnpm install
-pnpm dsh web
+pnpm start
 ```
 
-`pnpm dsh web` starts the Web UI on http://127.0.0.1:3080 and opens it in your browser (one-time login link is printed too).
-Flags after `web` reach the app: `pnpm dsh web --port 8080`, `pnpm dsh web --no-open`.
+`pnpm start` starts chatCATH on http://127.0.0.1:3080 and opens it in your browser (a one-time login link
+is also printed). Flags are passed through: `pnpm start --port 8080`, `pnpm start --no-open`.
+There is no build step.
 
-There is no build step: every plugin ships prebuilt from npm, and the two in-repo plugins commit their `lib/`.
+On first launch, open **Settings → Models** to add your model provider and API key.
 
-## What you get
+## Updating
 
-- dsh 0.1.2-rc.1 core (`@deepseek-ai/dsh-base`, `dsh-web-app`) + 16 community plugins pinned to exact versions
-  (market, better sidebar, codex-ui, task board, ssh-ops, skills manager, agency agents, archive manager, automation,
-  IM connect, subscriptions, message edit, suggest-prompt, find-plugin …)
-- In-repo plugins: `plugins/dsh-protein-cards` (protein structure cards) and `plugins/dsh-artifact-viewer`.
-- `patches/` applied automatically on `pnpm install`:
-  - patch 7 — Settings → General gets a "Restart DSH" row (中/英). Two clicks to confirm; the page reloads when the
-    new process is up. The server restarts as a detached process; `pnpm dsh web` follows it, so Ctrl-C still stops it.
-  - patch 10 — `@studyzy/dsh-suggest-prompt` 1.0.1 targets dsh 0.1.1; rewires three moved APIs so dsh 0.1.2 boots.
-  - patch 8 — ssh-ops session-header tab gets `role="tab"` (fixes the floating tab, shows in the English UI). Needs Python 3.
-  - patch 9 — ssh-ops: import a chosen list of hosts from `~/.ssh/config`. Needs Python 3.
+**Settings → General → Check for updates** lists what is new; **Update now** installs it and restarts
+chatCATH, and the page reloads by itself. The same pane has **Restart chatCATH**. Both follow the UI
+language (中文 / English).
 
-## How it works
+From a terminal, equivalently: `git pull && pnpm install && pnpm start`.
+Updating refuses to run over uncommitted local changes — commit or stash them first.
 
-dsh boots profiles only from `$DSH_HOME/profiles/<name>`, so `scripts/dsh.mjs` links
-`~/.dsh/profiles/chatcath` → this checkout on first run, then execs `dsh --profile chatcath …`.
-Settings, credentials and sessions live in `~/.dsh` like a stock dsh install. Use `DSH_HOME=…` or
-`CHATCATH_PROFILE=<name>` to change either.
+## Layout
 
-The dsh core has peer dependencies a global `npm install` satisfies implicitly; pnpm does not, so they are
-pinned under `dependencies` (see `chatcath.peerShims` in `package.json`). Bump them together with `@deepseek-ai/dsh`.
+- `package.json` — the plugin set (pinned versions) and the profile bundle list.
+- `plugins/chatcath-core` — branding, the update/restart rows and their local endpoints.
+- `plugins/chatcath-protein-cards`, `plugins/chatcath-artifact-viewer` — protein structure cards and the artifact viewer.
+- `patches/` — compatibility patches applied automatically on `pnpm install`.
+- `scripts/start.mjs` — entry: links this checkout as profile `chatcath` (data lives in `~/.dsh`), then starts the service.
 
-## Update
+## Publishing an update (maintainers)
 
-In the app: **Settings → General → Check for updates**. It runs `git fetch` and lists the new commits; **Update now**
-does `git pull --ff-only` + `pnpm install`, then restarts the service and reloads the page. The same pane has
-**Restart DSH**. Both rows follow the UI language (中文 / English).
-
-From the terminal, equivalently:
-
-```sh
-git pull && pnpm install && pnpm dsh web
-```
-
-Checkouts older than the updater plugin (before commit a705f66) need that one manual pull first.
-The updater refuses to run over uncommitted local changes; commit or stash them.
-
-## Add / remove plugins
-
-Edit `dependencies` and `dsh.profile.bundles` in `package.json`, run `pnpm install`. The in-app plugin market also works
-(it runs pnpm in this directory); commit the resulting `package.json` / `pnpm-lock.yaml` if you want to share the change.
+Edit, `pnpm install`, test with `pnpm start`, then `git push`. Members pick it up from **Check for updates**.

@@ -2,7 +2,7 @@ import { defineTool } from '@deepseek-ai/dsh-tools'
 import { readFile, stat } from 'node:fs/promises'
 import JSZip from 'jszip'
 import { XMLParser } from 'fast-xml-parser'
-export const name='dsh-artifact-viewer'
+export const name='chatcath-artifact-viewer'
 export const inject=['tools']
 const MAX=25*1024*1024,parser=new XMLParser({ignoreAttributes:false,attributeNamePrefix:'@_',textNodeName:'#text',removeNSPrefix:true,parseTagValue:false})
 const array=x=>x===undefined?[]:Array.isArray(x)?x:[x]

@@ -2,13 +2,13 @@
   "name": "chatcath",
   "version": "0.1.0",
   "private": true,
-  "description": "ChatCath — a DeepSeek Harness (dsh) profile for protein/biotech work: curated plugins + compatibility patches. Clone, pnpm install, pnpm dsh web.",
+  "description": "chatCATH — an AI research agent for protein science, for members of the CATH group.",
   "type": "module",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "dsh": "node scripts/dsh.mjs",
+    "start": "node scripts/start.mjs",
     "patch": "node scripts/patch.mjs",
     "postinstall": "node scripts/patch.mjs"
   },
@@ -46,13 +46,13 @@
     "@michengai/dsh-im-connect": "0.1.34",
     "@michengai/dsh-skills-manager": "0.1.38",
     "@studyzy/dsh-suggest-prompt": "1.0.1",
-    "chatcath-updater": "workspace:*",
-    "dsh-artifact-viewer": "workspace:*",
+    "chatcath-artifact-viewer": "workspace:*",
+    "chatcath-core": "workspace:*",
+    "chatcath-protein-cards": "workspace:*",
     "dsh-better-sidebar": "0.18.0",
     "dsh-find-plugin": "0.3.7",
     "dsh-plugin-message-edit": "1.0.0",
     "dsh-plugin-subscriptions": "0.6.0",
-    "dsh-protein-cards": "workspace:*",
     "dsh-ssh-ops": "0.2.20",
     "dshmarket": "1.41.0",
     "scheduler": "0.27.0"
@@ -74,11 +74,11 @@
         "@michengai/dsh-archive-manager",
         "@michengai/dsh-automation",
         "@michengai/dsh-im-connect",
-        "dsh-protein-cards",
-        "dsh-artifact-viewer",
+        "chatcath-protein-cards",
+        "chatcath-artifact-viewer",
         "dsh-plugin-message-edit",
         "@studyzy/dsh-suggest-prompt",
-        "chatcath-updater"
+        "chatcath-core"
       ]
     }
   },

@@ -1,4 +1,4 @@
-// chatcath-updater — host side.
+// chatcath-core — host side: branding, self-update, restart row.
 //   GET  /chatcath/update/status  current commit, whether an update run is in progress
 //   GET  /chatcath/update/check   git fetch, compare HEAD with the upstream branch
 //   POST /chatcath/update/apply   git pull --ff-only, pnpm install (async; poll status)
@@ -10,8 +10,9 @@ import { existsSync, realpathSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { SETTINGS_UI } from "./ui.js";
+import { BRAND_HEAD, FAVICON_PNG, LOGO_PNG, MANIFEST, PRODUCT } from "./brand.js";
 
-export const name = "chatcath-updater";
+export const name = "chatcath-core";
 export const inject = ["webServer"];
 
 const ROOT = dirname(dirname(dirname(dirname(realpathSync(fileURLToPath(import.meta.url))))));   // lib → plugin → plugins → repo root
@@ -100,11 +101,18 @@ export function apply_routes(ctx) {
       json(res, 202, { ok: true, op });
     } },
   ];
-  for (const r of routes) ctx.effect(() => ctx.webServer.register(r), `chatcath-updater: ${r.path}`);
+  routes.push(
+    { kind: "exact", path: "/chatcath/logo.png", handler: (_req, res) => { res.writeHead(200, { "content-type": "image/png", "cache-control": "public, max-age=86400" }); res.end(LOGO_PNG); } },
+    { kind: "exact", path: "/favicon.png", handler: (_req, res) => { res.writeHead(200, { "content-type": "image/png", "cache-control": "public, max-age=3600" }); res.end(FAVICON_PNG); } },
+    { kind: "exact", path: "/favicon.svg", handler: (_req, res) => { res.writeHead(200, { "content-type": "image/png", "cache-control": "public, max-age=3600" }); res.end(FAVICON_PNG); } },
+    { kind: "exact", path: "/manifest.webmanifest", handler: (_req, res) => { res.writeHead(200, { "content-type": "application/manifest+json", "cache-control": "no-cache" }); res.end(MANIFEST); } },
+  );
+  for (const r of routes) ctx.effect(() => ctx.webServer.register(r), `chatcath-core: ${r.path}`);
   ctx.effect(() => ctx.webServer.tapIndex((html) => {
+    let out = html.replace(/<title>[^<]*<\/title>/, `<title>${PRODUCT}</title>`).replace(/<link rel="icon"[^>]*>\s*/, "");
     const anchor = '<script type="module"';
-    const at = html.indexOf(anchor);
-    return at === -1 ? html : html.slice(0, at) + SETTINGS_UI + html.slice(at);
-  }), "chatcath-updater: settings ui");
+    const at = out.indexOf(anchor);
+    return at === -1 ? out + BRAND_HEAD + SETTINGS_UI : out.slice(0, at) + BRAND_HEAD + SETTINGS_UI + out.slice(at);
+  }), "chatcath-core: branding + settings ui");
 }
 export { apply_routes as apply };

@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-	id: "dsh-artifact-viewer",
+	id: "chatcath-artifact-viewer",
 	factory: (require) => {
 		var module = { exports: {} };
 		var exports = module.exports;

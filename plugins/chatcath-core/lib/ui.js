@@ -1,14 +1,14 @@
 // Injected into index.html by the host (webServer.tapIndex). Adds two rows at the end of
-// Settings → General: "Check for updates" and "Restart DSH". Labels follow the UI language.
+// Settings → General: "Check for updates" and "Restart chatCATH". Labels follow the UI language.
 export const SETTINGS_UI = `<script data-id="chatcath-settings">
 (function () {
   var T = {
     zh: { upd: '检查更新', updDesc: function (c) { return '当前版本 ' + c.sha + ' · ' + c.date; }, checking: '检查中…', latest: '已是最新', behind: function (n) { return '有 ' + n + ' 个新版本'; },
-          doUpdate: '立即更新', updating: '更新中…', pull: '正在拉取代码…', install: '正在安装依赖…', updDone: '更新完成,正在重启…', updFail: '更新失败', manual: '更新完成,请在终端重新运行 pnpm dsh web', dirty: '本地有未提交修改,无法自动更新',
-          rst: '重启 DSH', rstDesc: '重新启动本地服务,页面会自动刷新;安装或更新插件后需要', rstBtn: '重启', confirm: '再点一次确认', busy: '正在重启…', fail: '重启失败', timeout: '超时' },
+          doUpdate: '立即更新', updating: '更新中…', pull: '正在拉取代码…', install: '正在安装依赖…', updDone: '更新完成,正在重启…', updFail: '更新失败', manual: '更新完成,请在终端重新运行 pnpm start', dirty: '本地有未提交修改,无法自动更新',
+          rst: '重启 chatCATH', rstDesc: '重新启动本地服务,页面会自动刷新;安装或更新插件后需要', rstBtn: '重启', confirm: '再点一次确认', busy: '正在重启…', fail: '重启失败', timeout: '超时' },
     en: { upd: 'Check for updates', updDesc: function (c) { return 'Current version ' + c.sha + ' · ' + c.date; }, checking: 'Checking…', latest: 'Up to date', behind: function (n) { return n + ' new version' + (n > 1 ? 's' : '') + ' available'; },
-          doUpdate: 'Update now', updating: 'Updating…', pull: 'Pulling code…', install: 'Installing dependencies…', updDone: 'Updated, restarting…', updFail: 'Update failed', manual: 'Updated; run pnpm dsh web again in the terminal', dirty: 'Local uncommitted changes; cannot auto-update',
-          rst: 'Restart DSH', rstDesc: 'Restart the local service; the page reloads by itself. Needed after installing or updating plugins', rstBtn: 'Restart', confirm: 'Click again to confirm', busy: 'Restarting…', fail: 'Restart failed', timeout: 'timed out' }
+          doUpdate: 'Update now', updating: 'Updating…', pull: 'Pulling code…', install: 'Installing dependencies…', updDone: 'Updated, restarting…', updFail: 'Update failed', manual: 'Updated; run pnpm start again in the terminal', dirty: 'Local uncommitted changes; cannot auto-update',
+          rst: 'Restart chatCATH', rstDesc: 'Restart the local service; the page reloads by itself. Needed after installing or updating plugins', rstBtn: 'Restart', confirm: 'Click again to confirm', busy: 'Restarting…', fail: 'Restart failed', timeout: 'timed out' }
   };
   var GENERAL = { 'General': 'en', '通用设置': 'zh', '通用': 'zh' };
   var state = { armed: 0, busy: false, lang: null, checked: null, phase: 'idle' };

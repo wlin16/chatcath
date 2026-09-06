@@ -1,5 +1,5 @@
 {
-  "name": "dsh-artifact-viewer",
+  "name": "chatcath-artifact-viewer",
   "version": "0.1.0",
   "description": "Chat card grid and right-side previews for FASTA, CSV/TSV, DOCX, PPTX, and PDF artifacts in DSH Web.",
   "type": "module",

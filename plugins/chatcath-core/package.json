@@ -1,5 +1,5 @@
 {
-  "name": "chatcath-updater",
+  "name": "chatcath-core",
   "version": "0.1.0",
   "private": true,
   "description": "ChatCath self-update: Settings → General gets 'Check for updates' (git pull + pnpm install + restart) and 'Restart DSH'.",
