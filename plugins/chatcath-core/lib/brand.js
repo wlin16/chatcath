@@ -46,7 +46,7 @@ button.dcu-brand::after, [class*="dcu-brand"]::after {
   };
   var HERO = { en: { badge: 'CATH group', text: 'chat' }, zh: { badge: 'CATH 课题组', text: 'chat' } };
   var zh = function (sample) { return /[\\u4e00-\\u9fff]/.test(sample || ''); };
-  var uiZh = function () { return zh((document.body && document.body.textContent || '').slice(0, 3000)); };
+  var uiZh = function () { var n = document.querySelector('[class*="dcu-root"], nav, aside, main') || document.body; return zh((n.innerText || '').slice(0, 2000)); };
   // Only ever change text-node values; never add/remove/replace elements React renders.
   function setText(el, value) {
     if (!el) return;
